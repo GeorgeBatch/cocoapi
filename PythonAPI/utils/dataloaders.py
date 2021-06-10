@@ -53,6 +53,10 @@ class CocoNoCropping(Dataset):
         img_path = os.path.join(self.img_dir, img_name)
         image = read_image(img_path)
         
+        # for b/w images just stack the same channel together 3 times
+        if image.shape[0] == 1:
+            image = image.repeat(3, 1, 1)
+        
         if self.divide_by_255:
             image = image / 255.0
         
