@@ -24,5 +24,6 @@ __pycache__
 my_annotations/
 my_splits/
 my_images/
+images
 
 weights/
