@@ -1,3 +1,9 @@
+# Milti-label Binary Classification of Coco Images
+
+This repository shoes my work on addressing a question of whether objects of selected categories are present in an image. For example, the categories can be "bird", "cat", "dog", "person". In this case, an image containing multiple people and a bird will have a label [1, 0, 0, 1] since instances of "bird" and "person" categories are present, while instances of "cat" and "dog" categories are not.
+
+# README.txt (original)
+
 COCO API - http://cocodataset.org/
 
 COCO is a large image dataset designed for object detection, segmentation, person keypoints detection, stuff segmentation, and caption generation. This package provides Matlab, Python, and Lua APIs that assists in loading, parsing, and visualizing the annotations in COCO. Please visit http://cocodataset.org/ for more information on COCO, including for the data, paper, and tutorials. The exact format of the annotations is also described on the COCO website. The Matlab and Python APIs are complete, the Lua API provides only basic functionality.
