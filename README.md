@@ -1,6 +1,6 @@
 # Milti-label Binary Classification of Coco Images
 
-This repository shoes my work on addressing a question of whether objects of selected categories are present in an image. For example, the categories can be "bird", "cat", "dog", "person". In this case, an image containing multiple people and a bird will have a label [1, 0, 0, 1] since instances of "bird" and "person" categories are present, while "cat" and "dog" are not.
+This repository shoes my work on addressing a question of whether objects of selected categories are present in an image. For example, the categories can be "bird", "cat", "dog", "person". In this case, an image containing multiple people and a bird will have a label [1, 0, 0, 1] since instances of "bird" and "person" categories are present, while instances of "cat" and "dog" categories are not.
 
 # README.txt (original)
 
