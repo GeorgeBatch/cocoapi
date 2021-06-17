@@ -18,7 +18,83 @@ The same workflow can be used when dealing with medical images for which presenc
 - **Author:** George Batchkala, george.batchkala@gmail.com
 - **Data:** [COCO dataset](http://cocodataset.org/)
 - **GitHub repository:** https://github.com/GeorgeBatch/cocoapi
+
+
 ### Contents
+
+```
+- annotations (not on GitHub)
+- common
+- history
+- illustrations
+- images (not on GitHub)
+  |
+  ---- train2017
+  |    |
+  |    ---- 000000000009.jpg
+  |    |
+  |    ---- …
+  |
+  ---- val2017
+       |
+       ---- 000000000139.jpg
+       |
+       ---- …
+- learning_curves
+- my_annotations  (not on GitHub)
+- my_images  (not on GitHub)
+  |
+  ---- train1
+  |    |
+  |    ---- 000000001515.jpg
+  |    |
+  |    ---- …
+  |
+  ---- dev1
+       |
+       ---- 000000000813.jpg
+       |
+       ---- …
+- my_splits  (not on GitHub)
+- notebooks
+- results
+- weights
+```
+
+#### In this GitHub repository
+
+* **commmon**: scripts from the original cocoapi. Mainly used for pre-processing.
+
+* **history**: histories of losses, per-class, and average accuracies for each of the training epochs, best epochs and average accuracies. Saved as .json files at the end of each execution of `notebooks/5-plot-and-save-learning-curves.ipynb`.
+
+* **illustrations**: images for README.md.
+
+* **learning_curves**: saved learning curves. Produced in `notebooks/5-plot-and-save-learning-curves.ipynb`.
+
+* **notebooks**: Jupyter notebooks with all the code. Should be ran in order given by numbers.
+
+* **results**: summary of results.
+
+* **weights** contains a README file with links to download pre-trained weights.
+
+
+#### Not in GitHub repository (saving space)
+
+##### Need to create and populate
+
+Follow the instructions from the original readme of Coco API (at the bottom of the page) to download annotations and images.
+
+* annotations
+* images
+
+##### Created in the process while executing the notebooks
+
+* **my_annotations**: image-to-label mappings, produced in `my_annotations`.
+
+* **my_images**: copies of a small subset (~1300) of the images from `images`. `my_images` were uploaded to Google Drive and training was performed in Google Colab. Produced in `notebooks/2.5_copy_train1_and_dev1_images_into_separate_folders_for_colab.ipynb`.
+
+* **my_splits**: .txt files containing ids of train, dev, and test images. Produced in `notebooks/2-splits.ipynb`.
+
 
 # README.txt (original)
 
