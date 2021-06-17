@@ -2,7 +2,9 @@
 
 This repository shoes my work on addressing a question of whether objects of selected categories are present in an image. For example, the categories can be "bird", "cat", "dog", "person". In this case, an image containing multiple people and a bird will have a label [1, 0, 0, 1] since instances of "bird" and "person" categories are present, while instances of "cat" and "dog" categories are not.
 
-The same workflow can be used when dealing with medical images for which presence or absence of certain morphological pattern can be of utmost importance, e.g. presence of certain patterns signifies cancer.
+## Motivation
+
+The same workflow can be used when dealing with medical images for which presence or absence of certain morphological patterns can be of utmost importance, e.g. if presence of certain patterns signifies cancer.
 
 ## Project Details
 
@@ -11,7 +13,6 @@ The same workflow can be used when dealing with medical images for which presenc
 - **Author:** George Batchkala, george.batchkala@gmail.com
 - **Data:** [COCO dataset](http://cocodataset.org/)
 - **GitHub repository:** https://github.com/GeorgeBatch/cocoapi
-
 ### Contents
 
 # README.txt (original)
