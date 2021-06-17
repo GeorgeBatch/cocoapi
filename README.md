@@ -1,10 +1,15 @@
 # Milti-label Binary Classification of Coco Images
 
-This repository shoes my work on addressing a question of whether objects of selected categories are present in an image. For example, the categories can be "bird", "cat", "dog", "person". In this case, an image containing multiple people and a bird will have a label [1, 0, 0, 1] since instances of "bird" and "person" categories are present, while instances of "cat" and "dog" categories are not.
+This repository shoes my work on addressing a question of whether objects of selected categories are present in an image. For example, the categories can be "bird", "cat", "dog", "person". In this case, an image containing a woman holding a cat with a dog by her side (top image below) will have a label [0, 1, 1, 1] since instances of "cat", "dog" and "person" categories are present, while there are no instances of the "bird" category.
+
+![Input Output Example](https://github.com/GeorgeBatch/cocoapi/blob/multilabel-classsification/illustrations/input-output-example.png)
+
+* Top: https://cocodataset.org/#explore?id=42169
+* Bottom: https://cocodataset.org/#explore?id=120703
 
 ## Motivation
 
-The same workflow can be used when dealing with medical images for which presence or absence of certain morphological patterns can be of utmost importance, e.g. if presence of certain patterns signifies cancer.
+The same workflow can be used when dealing with medical images for which presence or absence of certain morphological patterns can be of utmost importance. For example, presence of certain patterns can signifiy cancer.
 
 ## Project Details
 
