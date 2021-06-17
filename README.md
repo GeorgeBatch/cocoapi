@@ -14,7 +14,7 @@ The same workflow can be used when dealing with medical images for which presenc
 ## Project Details
 
 - **Title:** Milti-label Binary Classification of Coco Images
-- **Type:** Simulating workflow for a medical imaging problem
+- **Aim:** Simulate the workflow for a medical imaging problem while waiting for the data
 - **Author:** George Batchkala, george.batchkala@gmail.com
 - **Data:** [COCO dataset](http://cocodataset.org/)
 - **GitHub repository:** https://github.com/GeorgeBatch/cocoapi
