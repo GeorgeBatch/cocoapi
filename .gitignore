@@ -26,3 +26,4 @@ my_images/
 images
 
 weights/
+!weights/README.md
