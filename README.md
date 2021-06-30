@@ -41,6 +41,7 @@ The same workflow can be used when dealing with medical images for which presenc
        |
        ---- …
 - learning_curves
+- models
 - my_annotations  (not on GitHub)
 - my_images  (not on GitHub)
   |
@@ -70,6 +71,8 @@ The same workflow can be used when dealing with medical images for which presenc
 * **illustrations**: images for README.md.
 
 * **learning_curves**: saved learning curves. Produced in `notebooks/5-plot-and-save-learning-curves.ipynb`.
+
+* **models**: scripts containing custom models
 
 * **notebooks**: Jupyter notebooks with all the code. Should be ran in order given by numbers.
 
