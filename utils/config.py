@@ -1,0 +1,9 @@
+CATEGORIES_OF_INTEREST=sorted(['bird', 'cat', 'dog', 'person'])
+
+TRAIN_IMGS_PER_CLASS = 128
+DEV_IMGS_PER_CLASS = 128
+
+# ImageNet parameters for ResNet
+IMG_SIZE = (224, 224)
+NORMALIZATION_MEAN = (0.485, 0.456, 0.406)
+NORMALIZATION_STD = (0.229, 0.224, 0.225)

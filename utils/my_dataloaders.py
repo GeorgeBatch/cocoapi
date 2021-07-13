@@ -15,7 +15,7 @@ from torch.utils.data import DataLoader
 
 import torchvision
 from torchvision import datasets
-from torchvision.io import read_image # reads image straingt to torch.tensor compared to 
+from torchvision.io import read_image # reads image straight to torch.tensor
 from torchvision.transforms import ToTensor
 
 
@@ -23,7 +23,7 @@ from torchvision.transforms import ToTensor
 
 class CocoNoCropping(Dataset):
     def __init__(self, img_ids, my_annotations_file, img_dir,
-                 transform=None, target_transform=None, divide_by_255=False):
+                 transform=None, target_transform=None, divide_by_255=False, return_image_details=False):
 
         # dataDir, dataType, annFile, 
         # self.coco_datatype = coco_datatype
@@ -35,12 +35,15 @@ class CocoNoCropping(Dataset):
             self.ids_to_labels = json.load(f)   # python dictionary saved as json IDs as strings
             
         self.img_dir = img_dir
+        self.return_image_details = return_image_details
         
         # target transforms
         self.target_transform = target_transform
         # image transforms
         self.transform = transform
         self.divide_by_255 = divide_by_255
+        
+  
         
 
     def __len__(self):
@@ -66,5 +69,12 @@ class CocoNoCropping(Dataset):
             
         if self.target_transform:
             label = self.target_transform(label)
-        sample = {"image": image, "label": label}
+        
+        # image details are not needed while training, but are useful for error analysis
+        if not self.return_image_details:
+            sample = {"image": image, "label": label}
+        else:
+            sample = {"image": image, "label": label,
+                      "image_id": img_id, "image_name": img_name, "image_path": img_path}
+            
         return sample
