@@ -99,6 +99,13 @@ Follow the instructions from the original readme of Coco API (at the bottom of t
 * **my_splits**: .txt files containing ids of train, dev, and test images. Produced in `notebooks/2-splits.ipynb`.
 
 
+### Acknowledgments
+
+This project was made as part of the CDT (PhD) in Health Data Science.
+
+**George Batchkala** is supported by Professor Fergus Gleeson’s A2 research funds and the EPSRC Center for Doctoral Training in Health Data Science (EP/S02428X/1).
+
+
 # README.txt (original)
 
 COCO API - http://cocodataset.org/
