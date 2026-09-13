@@ -1,6 +1,5 @@
 images/
 annotations/
-results/
 external/
 .DS_Store
 
@@ -20,3 +19,14 @@ __pycache__
 */__pycache__
 .ipynb_checkpoints
 */.ipynb_checkpoints
+
+my_annotations/
+my_splits/
+my_images/
+images
+
+weights/
+!weights/README.md
+
+# novel and belongs to Mengran Fan
+models/
